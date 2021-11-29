@@ -1,0 +1,177 @@
+:root {
+  --primary-text-color: #212121;
+  --primary-background-color: #fff;
+  --accent-color: #2196f3;
+  --secondary-background-color: #f5f4fa;
+  --paragraph-text-color: #757575;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.03em;
+  background: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+ul {
+  list-style: none;
+}
+/* -------- header -------- */
+.page-header {
+  background-color: var(--primary-background-color);
+}
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.web {
+  color: var(--accent-color);
+}
+.site-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+.site-nav-link:hover,
+.site-nav-link:focus {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.site-nav-link .current {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.auth-nav-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--paragraph-text-color);
+  text-decoration: none;
+}
+.auth-nav-link:hover,
+.auth-nav-link:focus {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+/* -------- герой --------- */
+.hero {
+  background-color: #2f303a;
+}
+.hero-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-background-color);
+}
+/* --------advantage----------- */
+.adv {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+}
+.adv-paragraph {
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--paragraph-text-color);
+}
+/* ----------our work------------ */
+.what-we-do {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+/* --------our team--------- */
+.team {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+/*================2pages=================*/
+/* ----------filters------------- */
+.filters .button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  background-color: var(--secondary-background-color);
+  color: var(--primary-text-color);
+}
+.filters .button:hover,
+.filters .button:focus {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
+  cursor: pointer;
+}
+/* ----------cards---------- */
+.card {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+}
+.paragraph {
+  font-size: 16px;
+  line-height: 1.88;
+  color: var(--paragraph-text-color);
+}
+/* -----footer------- */
+.footer {
+  background: #2f303a;
+}
+.footer-logo {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-background-color);
+  text-decoration: none;
+}
+.footer-web {
+  color: var(--accent-color);
+}
+.address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primary-background-color);
+  text-decoration: none;
+}
+.footer-nav {
+  font-size: 14px;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
