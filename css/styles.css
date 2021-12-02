@@ -5,21 +5,66 @@
   --secondary-background-color: #f5f4fa;
   --paragraph-text-color: #757575;
 }
+
 body {
+  margin: 0;
+  display: block;
+  box-sizing:border-box;
+  width: 1600px;
   font-family: "Raleway", sans-serif;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
   background: var(--primary-background-color);
   color: var(--primary-text-color);
 }
+
 ul {
   list-style: none;
 }
+
+
+
+
+/* ====container======= */
+.container{
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
 /* -------- header -------- */
+.nav {
+  display: flex;
+  align-items: center;
+  inline-size:
+}
+.site-nav{
+  left: 453px;
+  width: 294px;
+  display: flex;
+  justify-content: space-between;
+  }
+.page-header{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ECECEC;
+}
+.auth-nav{
+  margin-right: 215px;
+  display: flex; 
+}
 .page-header {
+  margin: 0;
+  width: 1600;
+  height: 80;
   background-color: var(--primary-background-color);
 }
 .logo {
+  margin-left: 215px;
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -56,6 +101,8 @@ ul {
   text-decoration: none;
 }
 .auth-nav-link {
+  margin-left: 50px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -73,11 +120,33 @@ ul {
   text-decoration: none;
 }
 
+
 /* -------- герой --------- */
 .hero {
+  margin-top: -37px;
+  height: 600px;
   background-color: #2f303a;
 }
-.hero-text {
+.hero .button{
+  margin-top: 100px;
+  margin-left: 700px;
+  width: 200px;
+  height: 50px;
+  top: 430px;
+}
+.hero .button:hover,
+.hero .button:focus{
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
+  cursor: pointer;
+  border-radius: 4px;
+}
+.hero .text {
+  width: 696px;
+  height: 120px;
+  margin-left: 452px;
+  padding-top: 200px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -86,38 +155,123 @@ ul {
   text-transform: uppercase;
   color: var(--primary-background-color);
 }
-/* --------advantage----------- */
-.adv {
+
+
+/* --------преимущества----------- */
+.adv{
+  display: flex;
+  height: 101px;
+  margin-top: 95px;
+  margin-bottom: 94px;
+  justify-content: center;
+
+  
+}
+.adv .item{
+  width: 270px;
+  height: 101px;
+  margin-right: 30px;
+}
+.adv > .text{
+  display: flex;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-transform: uppercase;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-.adv-paragraph {
+.adv .par{
+  font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--paragraph-text-color);
 }
+
+}
+
+
+
 /* ----------our work------------ */
-.what-we-do {
+.what-we-do{
+  margin-top: 94px;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+.what-we-do .text{
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--primary-text-color);
 }
+.what-we-do .img{
+  display: flex;
+  justify-content: center;
+}
+.img .photo{
+  margin-right: 30px;
+}
+
+
+
 /* --------our team--------- */
-.team {
+.team{
+  background-color: #F5F4FA;
+  padding-top: calc(94px - 29px);
+}
+.team .text{
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   color: var(--primary-text-color);
 }
+.team .photo{
+  display: flex;
+  justify-content: center;
+
+}
+.team .card{
+  margin-right: 30px;
+  margin-bottom: 94px;
+  background-color: var(--primary-background-color);
+}
+.photo .text{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.photo .par{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--paragraph-text-color);
+}
+
+
+
+
+
 /*================2pages=================*/
+
 /* ----------filters------------- */
+.portfolio{
+  margin-top: -30px;
+}
+.filters{
+ justify-content: center;
+  margin-top: 94px;
+  margin-bottom: 34px;
+  display: flex;
+}
 .filters .button {
+  margin-left: 8px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -135,24 +289,54 @@ ul {
   color: var(--primary-background-color);
   cursor: pointer;
 }
+
+
+
+
 /* ----------cards---------- */
-.card {
+.card-set {
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+  margin-bottom: 94px;
+}
+
+.card-set > .card-item {
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 1px solid #EEEEEE;
+}
+.card-item > .text{
+  margin-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
 }
-.paragraph {
+.card-item > .paragraph {
+  margin-left: 24px;
   font-size: 16px;
   line-height: 1.88;
   color: var(--paragraph-text-color);
 }
+
+
+
+
 /* -----footer------- */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: #2f303a;
+  margin-top: -17px;
 }
 .footer-logo {
+  margin-left: 215px;
+  padding: 0;
+
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -170,8 +354,14 @@ ul {
   text-decoration: none;
 }
 .footer-nav {
+  margin-bottom: 9px;
+  margin-left: 178px;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+.address {
+  margin-left: 178px;
+  margin-bottom: 9px;
 }

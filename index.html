@@ -8,14 +8,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<!-- навигация -->
-        <header class="page-header">
-            <div class="nav-bar">   
-                <nav>
+    <div class="container">
+<!----- навигация ----->
+        <header>
+            <div class="page-header">   
+                <nav class="nav">
                     <a class="logo" href=""><span class="web">Web</span>Studio</a>
                     <ul class="site-nav">
                         <li class="site-nav-item"><a class="site-nav-link" href="./index.html">Студия</a></li>
@@ -29,55 +30,51 @@
                     </ul>
             </div> 
         </header>
-    <main>
-<!-- герой -->
-    <div class="hero">
-        <section>
-            <h1 class="hero-text">Эффективные решения для вашего бизнеса</h1>
-            <button class="button" type="button">Заказать услугу</button>
-        </section>
-    </div>
-<!-- преимущества -->
-    <div>
-        <section>
-            <h2>Наши преимущества</h2>
-            <ul>
-                <li><h3 class="adv">Внимание к деталям</h3>
-                    <p class="adv-paragraph">Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
-                <li><h3 class="adv">Пунктуальность</h3>
-                    <p class="adv-paragraph">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
-                <li><h3 class="adv">Планирование</h3>
-                    <p class="adv-paragraph">Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
-                <li><h3 class="adv">Современные технологии</h3>
-                    <p class="adv-paragraph">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
-            </ul>
-        </section>
-    </div>
-<!-- работы -->
-        <section>
-            <h2 class="what-we-do">Чем мы занимаемся</h2>
-            <ul>
-                <li class="photo1"><img width="370" src="./Images/image_1.jpg" alt="image_1"></li>
-                <li class="photo2"><img width="370" src="./Images/image_2.jpg" alt="image_2"></li>
-                <li class="photo3"><img width="370" src="./Images/image_3.jpg" alt="image_3"></li>
-            </ul>
-        </section>
-<!-- команда -->
-        <section>  
-            <h2 class="team">Наша команда</h2>
-            <ul class="photo-of-team">
-                <li><img width="270" src="./Images/image_4.jpg" alt="Игорь Демьяненко">
-                    <h3 class="card">Игорь Демьяненко</h3><p class="paragraph">Product Designer</p></li>
-                <li><img width="270" src="./Images/image_5.jpg" alt="Ольга Репина">
-                    <h3 class="card">Ольга Репина</h3><p class="paragraph">Frontend Developer</p></li>
-                <li><img width="270" src="./Images/image_6.jpg" alt="Николай Тарасов"
-                    ><h3 class="card">Николай Тарасов</h3><p class="paragraph">Marketing</p></li>
-                <li><img width="270" src="./Images/image_7.jpg" alt="Михаил Ермаков">
-                    <h3 class="card">Михаил Ермаков</h3><p class="paragraph">UI Designer</p></li>
-            </ul>
-        </section>
-    </main>
-<!-- подвал -->
+            <main>
+<!------------- герой ------------->
+                <section class="hero">
+                    <h1 class="text">Эффективные решения для вашего бизнеса</h1>
+                    <button class="button" type="button">Заказать услугу</button>
+                </section>       
+<!------------- преимущества ------------> 
+                <section>
+                    <h2 hidden>Наши преимущества</h2>
+                    <ul class="adv">
+                        <li class="item"><h3 class="text">Внимание к деталям</h3>
+                            <p class="par">Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
+                        <li class="item"><h3 class="text">Пунктуальность</h3>
+                            <p class="par">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p></li>
+                        <li class="item"><h3 class="text">Планирование</h3>
+                            <p class="par">Равным образом консультация с широким активом в значительной степени обуславливает.</p></li>
+                        <li class="item"><h3 class="text">Современные технологии</h3>
+                            <p class="par">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
+                    </ul>
+                </section>
+<!------------- работы -------------->
+                <section class="what-we-do">
+                    <h2 class="text">Чем мы занимаемся</h2>
+                    <ul class="img">
+                        <li class="photo"><img width="370" src="./Images/image_1.jpg" alt="image_1"></li>
+                        <li class="photo"><img width="370" src="./Images/image_2.jpg" alt="image_2"></li>
+                        <li class="photo"><img width="370" src="./Images/image_3.jpg" alt="image_3"></li>
+                    </ul>
+                </section>
+<!------------- команда ------------->
+                <section class="team">  
+                    <h2 class="text">Наша команда</h2>
+                    <ul class="photo">
+                        <li class="card"><img width="270" src="./Images/image_4.jpg" alt="Игорь Демьяненко">
+                            <h3 class="text">Игорь Демьяненко</h3><p class="par">Product Designer</p></li>
+                        <li class="card"><img width="270" src="./Images/image_5.jpg" alt="Ольга Репина">
+                            <h3 class="text">Ольга Репина</h3><p class="par">Frontend Developer</p></li>
+                        <li class="card"><img width="270" src="./Images/image_6.jpg" alt="Николай Тарасов"
+                            ><h3 class="text">Николай Тарасов</h3><p class="par">Marketing</p></li>
+                        <li class="card"><img width="270" src="./Images/image_7.jpg" alt="Михаил Ермаков">
+                            <h3 class="text">Михаил Ермаков</h3><p class="par">UI Designer</p></li>
+                    </ul>
+                </section>
+            </main>
+<!----- подвал ----->
         <footer class="footer">
             <a class="footer-logo" href=""><span class="web">Web</span>Studio</a>
             <address>
@@ -91,4 +88,5 @@
                 </ul>
             </address>
         </footer>
+    </div>
 </html>
