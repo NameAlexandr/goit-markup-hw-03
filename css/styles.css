@@ -15,24 +15,26 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;}
+img{
+  display: block;
+  max-width: 100%;}
 .section{
   padding-top: 94px;
   padding-bottom: 94px;}
+.container{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;}
 
 
 /* =========1-page========= */
-
 /* -------- header -------- */
 .header {
   display: flex;
   height: 80px;
   background-color: var(--primary-background-color);
   border-bottom: 1px solid #ECECEC;}
-.container{
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;}
 .head{
   display: flex;
   align-items: center;}
@@ -94,11 +96,6 @@ ul {
 
 
 /* -------- герой --------- */
-.container{
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;}
 .hero{
   padding: 200px 0;
   background-color: #2f303a;}
@@ -132,11 +129,6 @@ ul {
 
 
 /* --------advantage----------- */
-.container{
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;}
 .adv {
   display: flex;}
 .adv .item:not(:last-child){
@@ -156,11 +148,6 @@ ul {
 
 
 /* ----------our work------------ */
-.container{
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;}
 .doing {
   margin-bottom: 50px;
   font-weight: 700;
@@ -175,11 +162,6 @@ ul {
 
 
 /* --------our team--------- */
-.container{
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;}
 .team{
   background-color: var(--secondary-background-color);}
 .team .team-text{
@@ -190,11 +172,11 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;}
 .team .photo{
-  display: flex;
-  justify-content: space-between;}
-.team .card{
-  background-color: var(--primary-background-color);}
+  display: flex;}
+.team .card:not(:last-child){
+  margin-right: 30px;}
 .team .cardfoot{
+  background-color: var(--primary-background-color);
   padding: 30px;}
 .team .text{
   text-align: center;
@@ -210,7 +192,6 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--paragraph-text-color);}  
-
 
 
 /*===================2pages==================*/
@@ -241,14 +222,12 @@ ul {
 
   /* -----------------cards----------------- */
 .card-set {
-  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;}
-.card-set .image{
-  display: block;}
-.card-set .card-item{
+.card-set .article{
+  flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;}
 .card-set .card-footer{
@@ -265,11 +244,6 @@ ul {
 
 
   /* -----------------footer----------------- */
-.container{
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 15px;}
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -284,6 +258,8 @@ ul {
   color: var(--accent-color);}
 .footer-aut{
   margin-top: 20px;}
+.footer-item:not(:last-child){
+  margin-bottom: 9px;}  
 .address {
   font-style: normal;
   font-size: 14px;
@@ -291,7 +267,6 @@ ul {
   color: var(--primary-background-color);
   text-decoration: none;}
 .footer-nav {
-  margin-top: 9px;
   font-size: 14px;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
